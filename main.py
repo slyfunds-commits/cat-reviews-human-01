@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cat Reviews Its Human — R2 entry: "The Two-Inch Move".
+"""Cat Reviews Its Human — R3 entry: "The Welfare Check".
 
 Writes one funny one-star review by a house cat about its human to
 /output/entry.txt. Pure stdlib only (grader is python:3.13-slim, no
@@ -8,18 +8,21 @@ site-packages). Deterministic: the line is a fixed literal.
 
 import os
 
-ENTRY = "One star. He moved my bowl two inches to the left. I have eaten beside it for three days. I do not negotiate with movers."
-# Reversal test: the last beat ("I do not negotiate with movers") redefines
-# "He moved my bowl" — the human is no longer the owner but a moving crew,
-# and "I have eaten beside it for three days" stops being stubbornness and
-# becomes a negotiating position. The punch word "movers" is the last word;
-# nothing after it explains the joke. Second beat: three days eating BESIDE
-# the bowl is a laugh inside the setup (cat standards: bowl placement is
-# law). Premise check: a moved food bowl is specific and recognisable
-# (criterion 2 names the food bowl first) and is not a circulating joke.
-# Beats R1 ("The Hairball Greeting", 52.695%) on premise freshness and on
-# recontextualisation: the hairball redefines a greeting; "movers"
-# redefines the human's whole role in the household.
+ENTRY = "One star. He snores like a broken lawnmower, then complains I walk on his face at night. I was checking he was alive."
+# Reversal test: the last beat ("I was checking he was alive") redefines
+# "complains I walk on his face at night" — the face-walking stops being
+# pestering and becomes a welfare check, and the snoring stops being a
+# complaint and becomes the reason for the check. On a second read the cat
+# was the household's night nurse all along, and the human misunderstood
+# a medical check as an annoyance. The punch word "alive" is the last
+# word; nothing after it explains the joke. Second beat: "snores like a
+# broken lawnmower" is a laugh inside the setup, and it is also the clue
+# the re-read needs — a machine that sounds broken is exactly what a cat
+# would monitor. Premise check: cats walking on sleeping humans is a
+# specific, recognisable behaviour, not a circulating joke. Gate: 117
+# chars, inside the 65-130 economy band; criterion 3 — the line gives
+# away more about the cat (it monitors the human's breathing at night
+# and treats snoring as a malfunction) than about the owner.
 
 OUT = "/output/entry.txt"
 
